@@ -1,0 +1,75 @@
+.footer {
+  background-color: $dark-background;
+  color: $color-darkgray;
+
+  &__container {
+    padding-top: 6.25rem;
+    padding-bottom: 3.75rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    cursor: pointer;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.125rem;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    &:not(:last-of-type) {
+      margin-right: 1.875rem;
+    }
+
+    a {
+      color: $color-darkgray;
+
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+  }
+
+  &__socials-item {
+    &:not(:last-of-type) {
+      margin-right: 2.5rem;
+    }
+
+    a {
+      display: inline-block;
+      height: 1.875rem;
+
+      &:hover {
+        svg {
+          color: $color-yellow;
+        }
+      }
+    }
+
+    svg {
+      color: $color-darkgray;
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+  }
+
+  &__copyright {
+    span {
+      margin-right: 1.25rem;
+    }
+  }
+}

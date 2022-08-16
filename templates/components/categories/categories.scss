@@ -1,0 +1,55 @@
+.categories {
+  background-color: $dark-background;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+    flex-wrap: wrap;
+    height: 3.125rem;
+    margin: 0 -1.875rem;
+  }
+
+  &__list-item,
+  &__link-all {
+    a {
+      display: flex;
+      align-items: center;
+      color: $color-gray;
+      font-size: 1.125rem;
+      line-height: 100%;
+      white-space: nowrap;
+      padding-right: 1.875rem;
+      padding-left: 1.875rem;
+      height: 3.125rem;
+    }
+
+    &_active,
+    &:hover {
+      a {
+        color: $color-yellow;
+      }
+    }
+  }
+
+  &__link-all {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+
+    a {
+      padding-right: 0;
+    }
+  }
+}

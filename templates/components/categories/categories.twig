@@ -1,0 +1,14 @@
+{% set categoriesItems = ['LoL', 'CS:Go', 'PUBG', 'Dota 2', 'StarCraft', 'Heartstone', 'Valorant', 'Overwatch', 'Warcraft', 'Call Of Duty'] %}
+
+<div class="categories">
+  <div class="container">
+    <div class="categories__container">
+      <ul class="categories__list">
+        {% for item in categoriesItems %}
+          <li class="categories__list-item"><a href="#">{{ item }}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="categories__link-all"><a href="#">Ещё игры...</a></div>
+    </div>
+  </div>
+</div>

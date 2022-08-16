@@ -1,0 +1,38 @@
+.breadcrumbs {
+  background-color: $dark-background;
+
+  &__container {
+    display: flex;
+    margin-right: auto;
+    padding: 1.25rem 0 3.125rem;
+    color: $color-darkgray;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    color: $color-gray;
+    font-size: 0.875rem;
+
+    &::after {
+      content: '/';
+      color: $color-darkgray;
+      margin-right: 0.25rem;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    a {
+      color: $color-darkgray;
+    }
+  }
+}

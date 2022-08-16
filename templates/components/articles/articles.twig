@@ -1,0 +1,14 @@
+{% if articles is defined and articles|length %}
+  <ul class="articles-list">
+    {% for item in articles %}
+      <li class="articles-list__item {{ loop.index <= 2 ? 'articles-list__item_big' }}" >
+        <img src="{{ item.logo }}" alt="{{ item.gameName }}">
+        <div class="articles-list__info">
+          <div class="articles-list__game-name">{{ item.gameName }}</div>
+          <div class="articles-list__title">{{ item.title }}</div>
+          <div class="articles-list__date">{{ item.date }}</div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

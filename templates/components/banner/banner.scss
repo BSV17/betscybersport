@@ -1,0 +1,79 @@
+.banner {
+  background-color: $dark-background;
+  color: $color-white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 11.25rem;
+    padding-bottom: 11.25rem;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 34.5rem;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin: 3.125rem 0 0;
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    top: 100%;
+    margin-top: 2.5rem;
+    max-width: 14.625rem;
+    color: $color-gray;
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 56.25%;
+
+    @include media-breakpoint-up(xl) {
+      width: 80%;
+      padding-top: 45%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .container {
+    padding: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 1rem;
+    }
+  }
+}

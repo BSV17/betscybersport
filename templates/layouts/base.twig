@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title ?? 'Boilerplate' }}</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    {% do view.registerCssFile(
+      "@web/static/css/index.css"
+    ) %}
+
+    {% do view.registerJsFile(
+      "@web/static/js/index.js",
+      { async: true })
+    %}
+
+
+  </head>
+  <body>
+    <div class="layout">
+      {% include "partials/header/header.twig" %}
+{#      {% include "components/categories/categories.twig" %}#}
+
+      <main class="content">
+        {% block content %}{% endblock %}
+      </main>
+
+{#      {% include "../partials/footer.twig" %}#}
+    </div>
+  </body>
+</html>

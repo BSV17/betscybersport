@@ -1,0 +1,57 @@
+.search-form {
+  display: none;
+  height: 2rem;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+  }
+
+  &.active {
+    border: 1px solid $color-white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 31rem;
+  }
+
+  button {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    color: $color-white;
+  }
+
+  &__button {
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    &_close {
+      display: none;
+      align-items: center;
+
+      svg {
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: $color-white;
+    font-size: 1.125rem;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+}

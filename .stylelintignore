@@ -1,0 +1,11 @@
+/config
+/deploy
+/docker
+/log
+/migrations
+/modules/
+/node_modules
+/storage
+/translations
+/vendor
+/public

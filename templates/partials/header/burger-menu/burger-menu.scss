@@ -1,0 +1,35 @@
+.burger-menu {
+  position: relative;
+  transform: rotate(0deg);
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.5s ease-in-out 0s;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
+  > span {
+    display: block;
+    height: 0.125rem;
+    width: 1.5rem;
+    background: $color-white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out 0s;
+    margin-bottom: 0.25rem;
+  }
+
+  &.opened {
+    > span:nth-child(1) {
+      transform: translateY(0.34rem) rotate(45deg);
+    }
+
+    > span:nth-child(2) {
+      opacity: 0;
+    }
+
+    > span:nth-child(3) {
+      transform: translateY(-0.43rem) rotate(-45deg);
+    }
+  }
+}

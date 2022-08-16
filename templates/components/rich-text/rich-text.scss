@@ -1,0 +1,72 @@
+.rich-text {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0 0 1.125rem;
+
+    & b {
+      font-family: Manrope-SemiBold, sans-serif;
+    }
+
+    &.quote {
+      font-style: italic;
+      margin-left: 2.125rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        max-width: 5px;
+        background-color: $color-lightgray;
+        left: -1.875rem;
+      }
+    }
+  }
+
+  h3 {
+    margin: 3.75rem 0 1.875rem;
+  }
+
+  h4 {
+    margin: 3.75rem 0 0.625rem;
+  }
+
+  img {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  ol {
+    padding-left: 1.125rem;
+    margin-bottom: 1.25rem;
+  }
+
+  li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding-left: 0.75rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  ul {
+    & li {
+      &:not(:last-of-type) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

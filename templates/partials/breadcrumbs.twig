@@ -1,0 +1,28 @@
+{% set breadcrumbs = [
+  {
+    'title': 'Главная',
+    'url': '#'
+  },
+  {
+    'title': 'Игры',
+    'url': null
+  }
+] %}
+
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs__container">
+      <ul class="breadcrumbs__list">
+        {% for item in breadcrumbs %}
+          <li class="breadcrumbs__item">
+            {% if item.url %}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

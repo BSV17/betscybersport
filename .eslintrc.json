@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [ "eslint:recommended" ],
+  "rules": {
+    "no-console": 0,
+    "quotes": [ "error", "single" ],
+    "max-len": [ "error", { "code": 120, "tabWidth": 2 } ]
+  },
+  "globals": {
+    "google": false,
+    "M": false,
+    "vis": false,
+    "TrackerCategories": false
+  }
+}

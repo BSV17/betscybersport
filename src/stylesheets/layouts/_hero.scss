@@ -1,0 +1,70 @@
+.hero {
+  background-color: $dark-background;
+  color: $color-white;
+
+  &__container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 31.25rem;
+
+    @include media-breakpoint-up(sm) {
+      height: 42.25rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 34.5rem;
+    z-index: 1;
+    position: relative;
+    height: fit-content;
+    padding: 0 1rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__description {
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1.5;
+    top: 100%;
+    margin-top: 1.875rem;
+    max-width: 31.25rem;
+    padding-right: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      padding-right: 0;
+    }
+  }
+
+  &__image {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    @include media-breakpoint-up(sm) {
+      width: 79%;
+    }
+  }
+
+  .container {
+    padding: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 1rem;
+    }
+  }
+}

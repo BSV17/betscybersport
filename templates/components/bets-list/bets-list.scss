@@ -1,0 +1,120 @@
+.bets-list {
+  display: grid;
+  grid-gap: 0.625rem;
+  list-style: none;
+  color: white;
+  margin-top: 3.75rem;
+  max-width: 68.75rem;
+  margin-left: auto;
+  position: relative;
+  margin-bottom: 2.5rem;
+
+  &__background-text {
+    display: none;
+    font-family: 'RussoOne-Regular', sans-serif;
+    font-size: 15.625rem;
+    color: rgba(255, 255, 255, 0.03);
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    position: absolute;
+    top: 6rem;
+    left: -58%;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding: 1.25rem;
+    border: 1px solid $border-color;
+    flex-direction: column;
+    max-width: 37.5rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      max-width: none;
+    }
+
+    button {
+      margin-left: 0;
+      height: fit-content;
+      align-self: center;
+
+      @include media-breakpoint-up(md) {
+        margin-left: 3.125rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        margin-left: 5.5rem;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 3.125rem;
+    }
+
+    a {
+      color: $color-blue;
+      font-family: Manrope-Medium, sans-serif;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    font-family: Manrope-Medium, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 0.625rem;
+  }
+
+  &__games-list {
+    margin-left: 0;
+    font-size: 0.75rem;
+    color: $color-gray;
+    max-width: 15.25rem;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 3.125rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 6.25rem;
+    }
+
+    a {
+      display: block;
+      margin-top: 0.5rem;
+
+      svg {
+        height: 0.75rem;
+        width: 0.625rem;
+      }
+    }
+  }
+
+  &__games-title {
+    color: $color-white;
+    font-family: Manrope-Medium, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 0.3125rem;
+  }
+
+  & + button {
+    width: 100%;
+    max-width: 68.75rem;
+    margin-left: auto;
+  }
+}

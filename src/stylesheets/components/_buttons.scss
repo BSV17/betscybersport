@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 1.125rem 2rem;
+  font-family: Manrope-SemiBold, sans-serif;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &_primary {
+    color: $color-white;
+    background-color: $color-purple;
+  }
+
+  &_outlined {
+    color: $color-yellow;
+    border: 1px solid $color-yellow;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  &_lg {
+    font-size: 1rem;
+    line-height: 1.3;
+    padding: 1.625rem 2.5rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.5rem;
+    }
+
+    svg {
+      margin-left: 0.625rem;
+      height: 1.125rem;
+      width: 1.125rem;
+    }
+  }
+}

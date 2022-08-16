@@ -1,0 +1,24 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "media-feature-name-no-unknown": null,
+    "color-no-invalid-hex": true,
+    "color-hex-case": "lower",
+    "at-rule-no-unknown": null,
+    "block-no-empty": null,
+    "no-empty-source": null,
+    "no-descending-specificity": null,
+    "comment-empty-line-before": [ "always", {
+      "ignore": ["stylelint-commands", "after-comment"]
+    } ],
+    "declaration-colon-space-after": "always",
+    "max-empty-lines": 2,
+    "rule-empty-line-before": [ "always", {
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
+    } ],
+    "unit-whitelist": [
+      "px", "em", "rem", "%", "s", "deg", "vw", "vh", "fr"
+    ]
+  }
+}

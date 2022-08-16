@@ -1,0 +1,15 @@
+$breakpoints-media-queries: (
+  xs: 'only screen and (min-width: 0)',
+  sm: 'only screen and (min-width: 48rem)',
+  md: 'only screen and (min-width: 62rem)',
+  lg: 'only screen and (min-width: 64rem)',
+  xl: 'only screen and (min-width: 75rem)',
+);
+
+@mixin media-breakpoint-up($prefix) {
+  $media-query: map-get($breakpoints-media-queries, $prefix);
+
+  @media #{$media-query} {
+    @content;
+  }
+}

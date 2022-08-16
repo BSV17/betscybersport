@@ -1,0 +1,33 @@
+{% if betsItems is defined and betsItems|length %}
+  <ul class="bets-list">
+    <div class="bets-list__background-text">
+      Esport
+    </div>
+    {% for item in betsItems %}
+      <li class="bets-list__item">
+        <img src="{{ item.logo }}" alt="{{ item.title }}">
+        <div class="bets-list__info">
+          <div class="bets-list__title">{{ item.title }}</div>
+          {% for link in item.additionalLinks %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+        <div class="bets-list__games-list">
+          <div class="bets-list__games-title">{{ item.list.title }}</div>
+          {{ item.list.items.join(", ") }}
+          <a href="{{ item.list.url }}">
+            <svg>
+              <use href="#arrowDown" width="10px" height="12px"/>
+            </svg>
+          </a>
+        </div>
+        <button class="button button_primary">Играть</button>
+      </li>
+    {% endfor %}
+  </ul>
+  <button class="button button_outlined button_lg">Каталог парнерских программ
+    <svg>
+      <use href="#arrow" width="18px" height="18px"/>
+    </svg>
+  </button>
+{% endif %}

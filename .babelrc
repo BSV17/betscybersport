@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", 
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "safari >= 7", "ie >= 11"]
+        },
+        "shippedProposals": true,
+        "modules": false,
+        "useBuiltIns": "usage",
+        "corejs": {
+          "version": 3
+         }  
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-export-default-from"
+  ]
+}

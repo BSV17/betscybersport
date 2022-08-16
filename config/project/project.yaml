@@ -1,0 +1,33 @@
+dateModified: 1660594954
+email:
+  fromEmail: seregars17@gmail.com
+  fromName: test_craft
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    39d0cb62-72fb-4108-8557-4baf70657635: Common # Common
+    736b3c6e-9604-481c-8e73-df06fc46ca78: test_craft # test_craft
+    801157a5-ffa6-401b-b223-29f8bc9bf848: betscybersport.local # betscybersport.local
+    9888806a-0fd5-47a9-9d36-fa428742f405: Home # Home
+    a0aa4c88-d77f-44c7-b3f6-17589266cdf0: Home # Home
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+system:
+  edition: solo
+  live: true
+  name: test_craft
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

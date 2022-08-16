@@ -1,0 +1,17 @@
+{% set logoTitle = 'Logo' %}
+{% set logoUrl = '../../src/images/mainLogo.svg' %}
+
+<header class="header">
+  <div class="container">
+    <div class="header__container">
+      <div class="header__controls">
+        <a href="#" class="header__logo">
+          <img src="{{ siteUrl }}assets/images/mainLogo.svg" alt="{{ logoTitle }}">
+        </a>
+        {% include "partials/header/burger-menu/burder-menu.twig" %}
+      </div>
+      {% include "partials/navigation.twig" %}
+      {% include "partials/header/search-form/search-form.twig" %}
+    </div>
+  </div>
+</header>

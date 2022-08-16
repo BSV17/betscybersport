@@ -1,0 +1,10 @@
+{% set navigationItems = ['Чемпионаты', 'Команды', 'Партнерки', 'Блог'] %}
+
+<ul class="navigation">
+  {% for item in navigationItems %}
+    <li class="navigation__item">
+      <a href="#">{{ item }}</a>
+    </li>
+  {% endfor %}
+  <li class="navigation__item"><a href="#">Ещё игры...</a></li>
+</ul>
