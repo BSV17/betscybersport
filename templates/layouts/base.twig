@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     {% do view.registerCssFile(
-      "@web/static/css/index.css"
+      "/static/css/index.css"
     ) %}
 
     {% do view.registerJsFile(
-      "@web/static/js/index.js",
+      "/static/js/index.js",
+      { async: true })
+    %}
+
+    {% do view.registerJsFile(
+      "/static/js/common.js",
       { async: true })
     %}
 
@@ -20,7 +25,7 @@
   <body>
     <div class="layout">
       {% include "partials/header/header.twig" %}
-{#      {% include "components/categories/categories.twig" %}#}
+      {% include "components/categories/categories.twig" %}
 
       <main class="content">
         {% block content %}{% endblock %}

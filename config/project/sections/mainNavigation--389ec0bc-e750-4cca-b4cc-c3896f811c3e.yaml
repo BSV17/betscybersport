@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: mainNavigation
+name: 'Main navigation'
+propagationMethod: all
+siteSettings:
+  801157a5-ffa6-401b-b223-29f8bc9bf848: # betscybersport.local
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 6d6ff833-439d-4af5-a043-a3c1887be6ac
+type: structure

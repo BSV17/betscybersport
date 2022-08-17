@@ -1,10 +1,12 @@
-{% set navigationItems = ['Чемпионаты', 'Команды', 'Партнерки', 'Блог'] %}
+{% set navigationItems = craft.entries().section('mainNavigation') %}
 
-<ul class="navigation">
-  {% for item in navigationItems %}
-    <li class="navigation__item">
-      <a href="#">{{ item }}</a>
-    </li>
-  {% endfor %}
-  <li class="navigation__item"><a href="#">Ещё игры...</a></li>
-</ul>
+{% if navigationItems|length %}
+  <ul class="navigation">
+    {% for item in navigationItems %}
+      <li class="navigation__item">
+        <a href="{{ item.linkedEntry.one().getUrl() }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    <li class="navigation__item"><a href="#">Ещё игры...</a></li>
+  </ul>
+{% endif %}

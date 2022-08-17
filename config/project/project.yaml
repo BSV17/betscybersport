@@ -1,12 +1,17 @@
-dateModified: 1660594954
+dateModified: 1660737373
 email:
   fromEmail: seregars17@gmail.com
   fromName: test_craft
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0cbf3dde-519b-4406-ad2c-40b4aaddf3b7: 'Entry link' # Entry link
     39d0cb62-72fb-4108-8557-4baf70657635: Common # Common
+    63aa0a94-a680-4523-bf36-dbadbf4c97ef: 'Entry link' # Entry link
+    104fe2e3-d47a-4ac9-af0f-9eb91f5e5f6c: 'Categories list' # Categories list
+    389ec0bc-e750-4cca-b4cc-c3896f811c3e: 'Main navigation' # Main navigation
     736b3c6e-9604-481c-8e73-df06fc46ca78: test_craft # test_craft
+    752392a2-d375-4c05-a7ad-32c1e099207e: 'Linked entry' # Linked entry
     801157a5-ffa6-401b-b223-29f8bc9bf848: betscybersport.local # betscybersport.local
     9888806a-0fd5-47a9-9d36-fa428742f405: Home # Home
     a0aa4c88-d77f-44c7-b3f6-17589266cdf0: Home # Home
