@@ -1,4 +1,4 @@
-{% set navigationItems = craft.entries().section('mainNavigation') %}
+{% set navigationItems = craft.entries().section('mainNavigation').all() %}
 
 {% if navigationItems|length %}
   <ul class="navigation">

@@ -1,4 +1,4 @@
-{% set categoriesItems = craft.entries().section('categoriesList') %}
+{% set categoriesItems = craft.entries().section('categoriesList').all() %}
 
 {% if categoriesItems|length %}
   <div class="categories">
