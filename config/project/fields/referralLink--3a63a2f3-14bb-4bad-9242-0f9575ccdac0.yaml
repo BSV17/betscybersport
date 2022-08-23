@@ -1,0 +1,15 @@
+columnSuffix: esuotwxw
+contentColumnType: string(255)
+fieldGroup: c4ecfeb5-b217-4b6a-9a7a-f3c69ab06197 # Bets
+handle: referralLink
+instructions: ''
+name: 'Referral link'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

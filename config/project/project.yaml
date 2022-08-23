@@ -1,4 +1,4 @@
-dateModified: 1660737373
+dateModified: 1661203294
 email:
   fromEmail: seregars17@gmail.com
   fromName: test_craft
@@ -6,15 +6,36 @@ email:
 meta:
   __names__:
     0cbf3dde-519b-4406-ad2c-40b4aaddf3b7: 'Entry link' # Entry link
+    3a63a2f3-14bb-4bad-9242-0f9575ccdac0: 'Referral link' # Referral link
+    7e98d1b7-a3a6-4b40-900c-30c91ad52318: Components # Components
+    8c6834ff-c270-46b8-b1dc-915513b34013: 'Bets list' # Bets list
+    8e6dc501-8c08-47d9-b875-e3e3048fdff5: URL # URL
+    9aca1901-83d9-4641-a5a8-7d0a9269cd81: Hero # Hero
+    9bb955cf-0a26-48c6-84d4-44eaae2b59b4: Default # Default
+    9dd3b616-ffe6-434c-808f-5f337cd5f680: 'Bets entries' # Bets entries
+    28c19995-f088-440a-b942-309b70972457: __blank__ # __blank__
+    34a1a262-790d-4280-829a-c0696be9a68f: 'Games list' # Games list
     39d0cb62-72fb-4108-8557-4baf70657635: Common # Common
+    42c66d97-53e0-4ccb-990d-52f558ad32e1: Title # Title
+    54a604b4-cb0c-412b-b024-1ce6b48f8ecf: Description # Description
     63aa0a94-a680-4523-bf36-dbadbf4c97ef: 'Entry link' # Entry link
+    93a1ea6c-0014-4941-b815-84b2bc9a63b5: 'Background image' # Background image
     104fe2e3-d47a-4ac9-af0f-9eb91f5e5f6c: 'Categories list' # Categories list
+    0378e9ff-f828-4059-96a3-1ed548a26f1d: Images # Images
     389ec0bc-e750-4cca-b4cc-c3896f811c3e: 'Main navigation' # Main navigation
+    532e1def-e63e-48a3-960d-72896d7e0d3e: 'Hero images' # Hero images
     736b3c6e-9604-481c-8e73-df06fc46ca78: test_craft # test_craft
+    917fb507-17c6-428b-bb37-8f248596b1c2: 'Rich text' # Rich text
+    947fa6fc-1184-4c14-8baf-64c9c519270c: 'Referral link title' # Referral link title
     752392a2-d375-4c05-a7ad-32c1e099207e: 'Linked entry' # Linked entry
     801157a5-ffa6-401b-b223-29f8bc9bf848: betscybersport.local # betscybersport.local
     9888806a-0fd5-47a9-9d36-fa428742f405: Home # Home
     a0aa4c88-d77f-44c7-b3f6-17589266cdf0: Home # Home
+    a0b723ba-1262-45bb-b901-b02ca8d48f58: Bets # Bets
+    a64b5eb0-4982-435e-8cb7-003cd6156a7d: Image # Image
+    c4ecfeb5-b217-4b6a-9a7a-f3c69ab06197: Bets # Bets
+    d5960fed-19a3-433c-9602-c34cf6e06ec1: 'Bets link' # Bets link
+    e7ea8641-7bba-4dc7-9827-283f3b07b2b1: Title # Title
 plugins:
   redactor:
     edition: standard

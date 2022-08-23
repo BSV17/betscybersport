@@ -5,29 +5,26 @@
     </div>
     {% for item in betsItems %}
       <li class="bets-list__item">
-        <img src="{{ item.logo }}" alt="{{ item.title }}">
+        <img src="{{ item.image.one().getUrl() }}" alt="{{ item.title }}">
         <div class="bets-list__info">
           <div class="bets-list__title">{{ item.title }}</div>
-          {% for link in item.additionalLinks %}
-            <a href="{{ link.url }}">{{ link.title }}</a>
-          {% endfor %}
+          {% if item.referralLink is defined and item.referralLinkTitle is defined %}
+            <a href="{{ item.referralLink }}">{{ item.referralLinkTitle }}</a>
+          {% endif %}
+          <a href="{{ item.linkedEntry.one().getUrl() }}">Обзор {{ item.title }}</a>
         </div>
         <div class="bets-list__games-list">
-          <div class="bets-list__games-title">{{ item.list.title }}</div>
-          {{ item.list.items.join(", ") }}
-          <a href="{{ item.list.url }}">
-            <svg>
-              <use href="#arrowDown" width="10px" height="12px"/>
-            </svg>
+          <div class="bets-list__games-title">Игры</div>
+          {{ item.gamesList }}
+          <a href="#">
+            {{ svg('@webroot/assets/icons/arrowDown.svg') }}
           </a>
         </div>
-        <button class="button button_primary">Играть</button>
+        <a href="{{ item.href }}" class="button button_primary">Играть</a>
       </li>
     {% endfor %}
   </ul>
-  <button class="button button_outlined button_lg">Каталог парнерских программ
-    <svg>
-      <use href="#arrow" width="18px" height="18px"/>
-    </svg>
-  </button>
+  <a href="#" class="button button_outlined button_lg">Каталог парнерских программ
+    {{ svg('@webroot/assets/icons/arrow.svg') }}
+  </a>
 {% endif %}

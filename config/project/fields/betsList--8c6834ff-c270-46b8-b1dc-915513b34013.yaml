@@ -1,0 +1,43 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 39d0cb62-72fb-4108-8557-4baf70657635 # Common
+handle: betsList
+instructions: ''
+name: 'Bets list'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - e7ea8641-7bba-4dc7-9827-283f3b07b2b1 # Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 9dd3b616-ffe6-434c-808f-5f337cd5f680 # Bets entries
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - d5960fed-19a3-433c-9602-c34cf6e06ec1 # Bets link
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_betslist}}'
+  fieldLayout: row
+  maxRows: '1'
+  minRows: '1'
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

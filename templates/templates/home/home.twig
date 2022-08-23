@@ -1,15 +1,15 @@
 {% extends "./layouts/base.twig" %}
 
-{% set title = 'Home' %}
+{% set betsListTitle = entry.betsList.betsListTitle %}
 
 {% block content %}
 {#  {% include "./partials/breadcrumbs.twig" %}#}
-{#  {% include "./partials/hero.twig" %}#}
-{#  {% embed "./partials/section/section.twig" with {title: "Сделать ставки и выиграть", background: 'dark'} %}#}
-{#    {% block content %}#}
-{#      {% include "./components/bets-list/bets-list.twig" with betsItems %}#}
-{#    {% endblock %}#}
-{#  {% endembed %}#}
+  {% include "partials/hero/hero.twig" %}
+  {% embed "./partials/section/section.twig" with {title: betsListTitle, background: 'dark'} %}
+    {% block content %}
+      {% include "./components/bets-list/bets-list.twig" with {betsItems: entry.betsList.betsEntries} %}
+    {% endblock %}
+  {% endembed %}
 {#  {% embed "./partials/section/section.twig" with {title: "Обзор Overwatch: ставки на киберспорт", aside: true} %}#}
 {#    {% block aside %}#}
 {#      {% include "./components/aside/aside.twig" %}#}

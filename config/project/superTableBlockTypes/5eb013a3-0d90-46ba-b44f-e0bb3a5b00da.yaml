@@ -1,0 +1,102 @@
+field: 8c6834ff-c270-46b8-b1dc-915513b34013 # Bets list
+fieldLayouts:
+  8da25ea4-de9d-4c1d-9966-b694dbf4360a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e7ea8641-7bba-4dc7-9827-283f3b07b2b1 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9dd3b616-ffe6-434c-808f-5f337cd5f680 # Bets entries
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d5960fed-19a3-433c-9602-c34cf6e06ec1 # Bets link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9dd3b616-ffe6-434c-808f-5f337cd5f680: # Bets entries
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: betsEntries
+    instructions: ''
+    name: 'Bets entries'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:a0b723ba-1262-45bb-b901-b02ca8d48f58' # Bets
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  d5960fed-19a3-433c-9602-c34cf6e06ec1: # Bets link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: betsLink
+    instructions: ''
+    name: 'Bets link'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - singles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  e7ea8641-7bba-4dc7-9827-283f3b07b2b1: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: betsListTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

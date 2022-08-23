@@ -1,0 +1,16 @@
+<div class="hero">
+  <div class="container">
+    <div class="hero__container">
+      <div class="hero__body">
+        <h1 class="hero__title">
+          {{ entry.hero.heroTitle }}
+        </h1>
+        <p class="hero__description">
+          {{ entry.hero.heroDescription }}
+        </p>
+      </div>
+      <div class="hero__image" style="background-image: url('{{ entry.hero.backgroundImage.one().getUrl() }}')">
+      </div>
+    </div>
+  </div>
+</div>

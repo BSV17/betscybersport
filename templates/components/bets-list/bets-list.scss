@@ -11,7 +11,7 @@
 
   &__background-text {
     display: none;
-    font-family: 'RussoOne-Regular', sans-serif;
+    font-family: Russo One, sans-serif;
     font-size: 15.625rem;
     color: rgba(255, 255, 255, 0.03);
     transform: rotate(-90deg);
@@ -39,7 +39,7 @@
       max-width: none;
     }
 
-    button {
+    & > a {
       margin-left: 0;
       height: fit-content;
       align-self: center;
@@ -65,14 +65,16 @@
 
     a {
       color: $color-blue;
-      font-family: Manrope-Medium, sans-serif;
+      font-family: Manrope, sans-serif;
+      font-weight: 500;
       font-size: 1rem;
       text-decoration: underline;
     }
   }
 
   &__title {
-    font-family: Manrope-Medium, sans-serif;
+    font-family: Manrope, sans-serif;
+    font-weight: 500;
     font-size: 2rem;
     text-transform: uppercase;
     color: $color-white;
@@ -106,13 +108,14 @@
 
   &__games-title {
     color: $color-white;
-    font-family: Manrope-Medium, sans-serif;
+    font-family: Manrope, sans-serif;
+    font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 0.3125rem;
   }
 
-  & + button {
+  & + a {
     width: 100%;
     max-width: 68.75rem;
     margin-left: auto;

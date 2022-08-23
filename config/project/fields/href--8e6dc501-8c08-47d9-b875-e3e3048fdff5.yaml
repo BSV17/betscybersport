@@ -1,0 +1,15 @@
+columnSuffix: yndmowxn
+contentColumnType: string(255)
+fieldGroup: 39d0cb62-72fb-4108-8557-4baf70657635 # Common
+handle: href
+instructions: ''
+name: URL
+searchable: true
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url
