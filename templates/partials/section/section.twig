@@ -6,9 +6,7 @@
          <h2 class="section__title">{{ title }}</h2>
          {% if titleLink is defined %}
            <a href="#" class="section__title-link">
-             <svg>
-               <use href="#arrow" width="18px" height="18px"/>
-             </svg>
+             {{ svg('@webroot/assets/icons/arrow.svg') }}
            </a>
          {% endif %}
        </div>

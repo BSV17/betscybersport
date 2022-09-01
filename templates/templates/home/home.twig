@@ -2,31 +2,42 @@
 
 {% set betsListTitle = entry.betsList.betsListTitle %}
 
+{% set gameNews = craft.entries().section("newsArticles").gameSelector(entry.gameSelector).orderBy("postDate")|slice(0, 5) %}
+
+{% set newsArticles = craft.entries().section("newsArticles").orderBy("postDate")|slice(0, 5) %}
+
 {% block content %}
-{#  {% include "./partials/breadcrumbs.twig" %}#}
+  {#  {% include "./partials/breadcrumbs.twig" %} #}
   {% include "partials/hero/hero.twig" %}
   {% embed "./partials/section/section.twig" with {title: betsListTitle, background: 'dark'} %}
     {% block content %}
       {% include "./components/bets-list/bets-list.twig" with {betsItems: entry.betsList.betsEntries} %}
     {% endblock %}
   {% endembed %}
-{#  {% embed "./partials/section/section.twig" with {title: "Обзор Overwatch: ставки на киберспорт", aside: true} %}#}
-{#    {% block aside %}#}
-{#      {% include "./components/aside/aside.twig" %}#}
-{#    {% endblock %}#}
-{#    {% block content %}#}
-{#      {% include "./components/rich-text/rich-text.twig" %}#}
-{#    {% endblock %}#}
-{#  {% endembed %}#}
-{#  {% include "./components/banner/banner.twig" %}#}
-{#  {% embed "./partials/section/section.twig" with {title: "Что нового про overwatch"} %}#}
-{#    {% block content %}#}
-{#      {% include "./components/articles/articles.twig" %}#}
-{#    {% endblock %}#}
-{#  {% endembed %}#}
-{#  {% embed "./partials/section/section.twig" with {title: "Другие новости", titleLink: true} %}#}
-{#    {% block content %}#}
-{#      {% include "./components/articles/articles.twig" %}#}
-{#    {% endblock %}#}
-{#  {% endembed %}#}
+  {% embed "./partials/section/section.twig" with {title: "Обзор Overwatch: ставки на киберспорт", aside: true} %}
+    {% block aside %}
+      {% include "./components/aside/aside.twig" %}
+    {% endblock %}
+    {% block content %}
+      {% for block in entry.contentBlocks %}
+        {% switch block.type %}
+        {% case "richText" %}
+          {% include "./components/rich-text/rich-text.twig" %}
+          {% case "media" %}
+          {% include "./components/media/media.twig" %}
+        {% endswitch %}
+      {% endfor %}
+    {% endblock %}
+  {% endembed %}
+  {% include "./components/banner/banner.twig" %}
+  {% embed "./partials/section/section.twig" with {title: "Что нового про #{entry.gameSelector.label}"} %}
+    {% block content %}
+      {% include "./components/articles/articles.twig" with {articles: gameNews} %}
+    {% endblock %}
+  {% endembed %}
+  {% embed "./partials/section/section.twig" with {title: "Другие новости", titleLink: true} %}
+    {% block content %}
+      {% include "./components/articles/articles.twig" with {articles: newsArticles} %}
+    {% endblock %}
+  {% endembed %}
 {% endblock content %}

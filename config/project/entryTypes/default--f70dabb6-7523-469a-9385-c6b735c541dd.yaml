@@ -1,5 +1,5 @@
 fieldLayouts:
-  9efd3738-c232-41d5-9cf6-64bb981ca2f1:
+  1f921a68-2ccc-4c03-9884-e55d9251e16d:
     tabs:
       -
         elements:
@@ -27,19 +27,19 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9aca1901-83d9-4641-a5a8-7d0a9269cd81 # Hero
-            instructions: null
-            label: null
-            required: false
+            fieldUid: a64b5eb0-4982-435e-8cb7-003cd6156a7d # Image
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
-            fieldUid: 8c6834ff-c270-46b8-b1dc-915513b34013 # Bets list
-            instructions: null
-            label: null
-            required: false
+            fieldUid: 20c2dd83-73a2-41cc-89ae-597b0d685460 # Game selector
+            instructions: ''
+            label: ''
+            required: '1'
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -53,31 +53,13 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-          -
-            fieldUid: a6c468ec-424b-464d-801b-a4b603b6053b # Banner
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 20c2dd83-73a2-41cc-89ae-597b0d685460 # Game selector
-            instructions: ''
-            label: 'News game selector'
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
-handle: home
-hasTitleField: false
-name: Home
-section: a0aa4c88-d77f-44c7-b3f6-17589266cdf0 # Home
+handle: default
+hasTitleField: true
+name: Default
+section: 5f89d24d-d064-4829-a666-943b13de6161 # News articles
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

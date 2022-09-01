@@ -1,0 +1,22 @@
+{% extends "./layouts/base.twig" %}
+
+{% block content %}
+  <article>
+    {% include "./partials/section/section.twig" with {title: entry.title, background: 'dark'} %}
+    {% embed "./partials/section/section.twig" with { aside: true} %}
+      {% block aside %}
+        {% include "./components/aside/aside.twig" %}
+      {% endblock %}
+      {% block content %}
+        {% for block in entry.contentBlocks %}
+          {% switch block.type %}
+          {% case "richText" %}
+            {% include "./components/rich-text/rich-text.twig" %}
+          {% case "media" %}
+            {% include "./components/media/media.twig" %}
+          {% endswitch %}
+        {% endfor %}
+      {% endblock %}
+    {% endembed %}
+  </article>
+{% endblock %}

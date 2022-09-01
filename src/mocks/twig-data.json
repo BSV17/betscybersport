@@ -76,38 +76,6 @@
       }
     }
   ],
-  "articles": [
-    {
-      "logo": "../../../../src/images/game_poster_1.png",
-      "gameName": "Game Name",
-      "title": "Viewership results for Clash of Clans World Championship 2020 qualifiers",
-      "date": "14 ноября, 2020"
-    },
-    {
-      "logo": "../../../../src/images/game_poster_2.png",
-      "gameName": "Game Name",
-      "title": "Viewership results for Clash of Clans World Championship 2020 qualifiers",
-      "date": "14 ноября, 2020"
-    },
-    {
-      "logo": "../../../../src/images/game_poster_3.png",
-      "gameName": "Game Name",
-      "title": "Viewership results for Clash of Clans World Championship 2020 qualifiers",
-      "date": "14 ноября, 2020"
-    },
-    {
-      "logo": "../../../../src/images/game_poster_4.png",
-      "gameName": "Game Name",
-      "title": "Viewership results for Clash of Clans World Championship 2020 qualifiers",
-      "date": "14 ноября, 2020"
-    },
-    {
-      "logo": "../../../../src/images/game_poster_5.png",
-      "gameName": "Game Name",
-      "title": "Viewership results for Clash of Clans World Championship 2020 qualifiers",
-      "date": "14 ноября, 2020"
-    }
-  ],
   "asideNavigationItems": [
     {
       "title": "Betting on esports matches is growing just as fast",
@@ -147,20 +115,6 @@
     },
     {
       "title": "We give you the chance to explore Esports betting",
-      "link": "#"
-    }
-  ],
-  "footerLinks": [
-    {
-      "title": "О нас",
-      "link": "#"
-    },
-    {
-      "title": "Условия и соглашения",
-      "link": "#"
-    },
-    {
-      "title": "Авторы",
       "link": "#"
     }
   ],

@@ -1,25 +1,29 @@
+{% set footerLinks = craft.entries().section('footerLinks').all() %}
+
 <footer class="footer">
   <div class="container">
     <div class="footer__container">
       <div class="footer__body">
-        <ul class="footer__links">
-          {% for item in footerLinks %}
-          <li class="footer__link">
-            <a href="{{item.link}}">{{item.title}}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        <ul class="footer__socials">
-          {% for item in footerSocials %}
-          <li class="footer__socials-item">
-            <a href="{{ item.link }}">
-              <svg>
-                <use href="#{{item.title}}Footer" width="30px" height="30px"/>
-              </svg>
-            </a>
-          </li>
-          {%  endfor %}
-        </ul>
+        {% if footerLinks|length %}
+          <ul class="footer__links">
+            {% for item in footerLinks %}
+              <li class="footer__link">
+                <a href="{{ item.linkedEntry.one().getUrl() }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+{#        <ul class="footer__socials">#}
+{#          {% for item in footerSocials %}#}
+{#            <li class="footer__socials-item">#}
+{#              <a href="{{ item.link }}">#}
+{#                <svg>#}
+{#                  <use href="#{{ item.title }}Footer" width="30px" height="30px"/>#}
+{#                </svg>#}
+{#              </a>#}
+{#            </li>#}
+{#          {% endfor %}#}
+{#        </ul>#}
       </div>
       <div class="footer__copyright">
         <span>© Bestcybersport</span>

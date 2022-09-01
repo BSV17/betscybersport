@@ -1,0 +1,123 @@
+columnSuffix: xdmqjxsi
+contentColumnType: string
+fieldGroup: 39d0cb62-72fb-4108-8557-4baf70657635 # Common
+handle: gameSelector
+instructions: ''
+name: 'Game selector'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - LoL
+        -
+          - value
+          - lol
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'CS:Go'
+        -
+          - value
+          - csgo
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - PUBG
+        -
+          - value
+          - pubg
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Dota 2'
+        -
+          - value
+          - dota2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - StarCraft
+        -
+          - value
+          - starcraft
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Heartstone
+        -
+          - value
+          - heartstone
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Valorant
+        -
+          - value
+          - valorant
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Overwatch
+        -
+          - value
+          - overwatch
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Warcraft
+        -
+          - value
+          - warcraft
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Call Of Duty'
+        -
+          - value
+          - callOfDuty
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
