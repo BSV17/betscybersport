@@ -1,0 +1,43 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 39d0cb62-72fb-4108-8557-4baf70657635 # Common
+handle: banner
+instructions: ''
+name: Banner
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 35d9ce25-b7c4-4a3a-8ce0-fef7a33cccd2 # Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 1c8100fa-72d2-459c-be52-0f7311264d58 # Body
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 1cea1829-26fd-4c78-8acc-7867b759922f # Video link
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_banner}}'
+  fieldLayout: matrix
+  maxRows: '1'
+  minRows: '1'
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField
