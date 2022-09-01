@@ -1,0 +1,92 @@
+field: a6c468ec-424b-464d-801b-a4b603b6053b # Banner
+fieldLayouts:
+  3cb12689-b569-4650-9512-138083b737fa:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 35d9ce25-b7c4-4a3a-8ce0-fef7a33cccd2 # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1c8100fa-72d2-459c-be52-0f7311264d58 # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1cea1829-26fd-4c78-8acc-7867b759922f # Video link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1c8100fa-72d2-459c-be52-0f7311264d58: # Body
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: bannerBody
+    instructions: ''
+    name: Body
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1cea1829-26fd-4c78-8acc-7867b759922f: # Video link
+    columnSuffix: null
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: videoLink
+    instructions: ''
+    name: 'Video link'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  35d9ce25-b7c4-4a3a-8ce0-fef7a33cccd2: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: bannerTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

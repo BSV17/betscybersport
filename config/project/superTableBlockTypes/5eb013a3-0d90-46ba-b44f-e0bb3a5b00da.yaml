@@ -94,7 +94,7 @@ fields:
       code: ''
       columnType: null
       initialRows: '2'
-      multiline: '1'
+      multiline: ''
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
