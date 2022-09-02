@@ -1,7 +1,7 @@
 {% for block in contentBlocks %}
   {% switch block.type %}
   {% case "richText" %}
-    {% include "./components/rich-text/rich-text.twig" %}
+    {% include "./components/richText/richText.twig" %}
   {% case "media" %}
     {% include "./components/media/media.twig" %}
   {% endswitch %}
