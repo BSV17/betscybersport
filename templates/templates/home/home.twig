@@ -19,17 +19,10 @@
       {% include "./components/aside/aside.twig" %}
     {% endblock %}
     {% block content %}
-      {% for block in entry.contentBlocks %}
-        {% switch block.type %}
-        {% case "richText" %}
-          {% include "./components/rich-text/rich-text.twig" %}
-          {% case "media" %}
-          {% include "./components/media/media.twig" %}
-        {% endswitch %}
-      {% endfor %}
+      {% include "./components/contentBlocks/contentBlocks.twig" with {contentBlocks: entry.contentBlocks} %}
     {% endblock %}
   {% endembed %}
-  {% include "./components/banner/banner.twig" %}
+  {% include "./components/banner/banner.twig" with {block: entry.banner} %}
   {% embed "./partials/section/section.twig" with {title: "Что нового про #{entry.gameSelector.label}"} %}
     {% block content %}
       {% include "./components/articles/articles.twig" with {articles: gameNews} %}

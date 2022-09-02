@@ -1,4 +1,4 @@
-dateModified: 1661985837
+dateModified: 1662118907
 email:
   fromEmail: seregars17@gmail.com
   fromName: test_craft
@@ -21,6 +21,7 @@ meta:
     9dd3b616-ffe6-434c-808f-5f337cd5f680: 'Bets entries' # Bets entries
     20c2dd83-73a2-41cc-89ae-597b0d685460: 'Game selector' # Game selector
     28c19995-f088-440a-b942-309b70972457: __blank__ # __blank__
+    31fc4cda-180d-44cf-9649-e6d2311deb12: Default # Default
     34a1a262-790d-4280-829a-c0696be9a68f: 'Games list' # Games list
     35d9ce25-b7c4-4a3a-8ce0-fef7a33cccd2: Title # Title
     39d0cb62-72fb-4108-8557-4baf70657635: Common # Common
@@ -45,6 +46,7 @@ meta:
     a0b723ba-1262-45bb-b901-b02ca8d48f58: Bets # Bets
     a6c468ec-424b-464d-801b-a4b603b6053b: Banner # Banner
     a64b5eb0-4982-435e-8cb7-003cd6156a7d: Image # Image
+    be674ddd-a4f4-4e60-ac97-ceb8d850f53f: Socials # Socials
     c4ecfeb5-b217-4b6a-9a7a-f3c69ab06197: Bets # Bets
     d5960fed-19a3-433c-9602-c34cf6e06ec1: 'Bets link' # Bets link
     e7ea8641-7bba-4dc7-9827-283f3b07b2b1: Title # Title

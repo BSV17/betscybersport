@@ -1,81 +1,4 @@
 {
-  "betsItems": [
-    {
-      "logo": "../../../../src/images/ggbet.png",
-      "title": "GGbet",
-      "additionalLinks": [
-        {
-          "title": "Бонус за регистрацию 300$",
-          "url": "#"
-        },
-        {
-          "title": "Обзор GG BET",
-          "url": "#"
-        }
-      ],
-      "list": {
-        "title": "Игры",
-        "items": [
-          "League of Legends",
-          "Tom Clancys Rainbow Six: Siege",
-          "Minecraft",
-          "Valorant",
-          "Rocket League"
-        ],
-        "url": "#"
-      }
-    },
-    {
-      "logo": "../../../../src/images/betway.png",
-      "title": "Betway",
-      "additionalLinks": [
-        {
-          "title": "Бонус за регистрацию 300$",
-          "url": "#"
-        },
-        {
-          "title": "Обзор Betway",
-          "url": "#"
-        }
-      ],
-      "list": {
-        "title": "Игры",
-        "items": [
-          "League of Legends",
-          "Tom Clancys Rainbow Six: Siege",
-          "Minecraft",
-          "Valorant",
-          "Rocket League"
-        ],
-        "url": "#"
-      }
-    },
-    {
-      "logo": "../../../../src/images/888sport.png",
-      "title": "888 sport",
-      "additionalLinks": [
-        {
-          "title": "Бонус за регистрацию 300$",
-          "url": "#"
-        },
-        {
-          "title": "Обзор Betway",
-          "url": "#"
-        }
-      ],
-      "list": {
-        "title": "Игры",
-        "items": [
-          "League of Legends",
-          "Tom Clancys Rainbow Six: Siege",
-          "Minecraft",
-          "Valorant",
-          "Rocket League"
-        ],
-        "url": "#"
-      }
-    }
-  ],
   "asideNavigationItems": [
     {
       "title": "Betting on esports matches is growing just as fast",
@@ -115,28 +38,6 @@
     },
     {
       "title": "We give you the chance to explore Esports betting",
-      "link": "#"
-    }
-  ],
-  "footerSocials": [
-    {
-      "title": "facebook",
-      "link": "#"
-    },
-    {
-      "title": "twich",
-      "link": "#"
-    },
-    {
-      "title": "youtube",
-      "link": "#"
-    },
-    {
-      "title": "instagram",
-      "link": "#"
-    },
-    {
-      "title": "twitter",
       "link": "#"
     }
   ]

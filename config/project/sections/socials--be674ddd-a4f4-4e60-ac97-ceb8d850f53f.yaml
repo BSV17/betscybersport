@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: socials
+name: Socials
+propagationMethod: all
+siteSettings:
+  801157a5-ffa6-401b-b223-29f8bc9bf848: # betscybersport.local
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 73b59ffc-443b-429a-b73e-626c915ef8be
+type: structure
