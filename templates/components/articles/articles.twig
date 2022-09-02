@@ -2,11 +2,11 @@
   <ul class="articles-list">
     {% for item in articles %}
       <li class="articles-list__item {{ loop.index <= 2 ? 'articles-list__item_big' }}" >
-        <img src="{{ item.logo }}" alt="{{ item.gameName }}">
+        <img src="{{ item.image.one().getUrl() }}" alt="{{ item.gameSelector.label }}">
         <div class="articles-list__info">
-          <div class="articles-list__game-name">{{ item.gameName }}</div>
-          <div class="articles-list__title">{{ item.title }}</div>
-          <div class="articles-list__date">{{ item.date }}</div>
+          <div class="articles-list__game-name">{{ item.gameSelector.label }}</div>
+          <div class="articles-list__title"><a href="{{ item.url }}">{{ item.title }}</a></div>
+          <div class="articles-list__date">{{ item.postDate | date("d F, Y") }}</div>
         </div>
       </li>
     {% endfor %}

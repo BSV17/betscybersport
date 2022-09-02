@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 39d0cb62-72fb-4108-8557-4baf70657635 # Common
-handle: components
+handle: contentBlocks
 instructions: ''
-name: Components
+name: 'Content blocks'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_components}}'
+  contentTable: '{{%matrixcontent_contentblocks}}'
   maxBlocks: ''
   minBlocks: ''
   propagationKeyFormat: null

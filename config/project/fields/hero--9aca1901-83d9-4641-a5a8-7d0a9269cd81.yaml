@@ -37,7 +37,7 @@ settings:
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: ''
-  staticField: ''
+  staticField: '1'
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

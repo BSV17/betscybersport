@@ -14,22 +14,6 @@
       font-family: Manrope, sans-serif;
       font-weight: 600;
     }
-
-    &.quote {
-      font-style: italic;
-      margin-left: 2.125rem;
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        max-width: 5px;
-        background-color: $color-lightgray;
-        left: -1.875rem;
-      }
-    }
   }
 
   h3 {
@@ -38,14 +22,6 @@
 
   h4 {
     margin: 3.75rem 0 0.625rem;
-  }
-
-  img {
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: 1.875rem;
-    }
   }
 
   ol {
@@ -64,10 +40,28 @@
   }
 
   ul {
+    padding-left: 1.125rem;
+
     & li {
       &:not(:last-of-type) {
         margin-bottom: 1rem;
       }
+    }
+  }
+
+  blockquote {
+    font-style: italic;
+    margin-left: 2.125rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      max-width: 5px;
+      background-color: $color-lightgray;
+      left: -2.125rem;
     }
   }
 }

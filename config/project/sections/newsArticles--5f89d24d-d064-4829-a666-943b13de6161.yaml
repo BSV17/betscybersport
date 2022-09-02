@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: newsArticles
+name: 'News articles'
+propagationMethod: all
+siteSettings:
+  801157a5-ffa6-401b-b223-29f8bc9bf848: # betscybersport.local
+    enabledByDefault: true
+    hasUrls: true
+    template: templates/news/entry.twig
+    uriFormat: 'news/{slug}'
+type: channel

@@ -33,6 +33,11 @@
     line-height: 1.2;
     max-width: 27.6rem;
     margin-bottom: 0.625rem;
+
+    & a {
+      text-decoration: none;
+      color: $base-color;
+    }
   }
 
   &__date {

@@ -1,0 +1,15 @@
+{% extends "./layouts/base.twig" %}
+
+{% block content %}
+  <article>
+    {% include "./partials/section/section.twig" with {title: entry.title, background: 'dark'} %}
+    {% embed "./partials/section/section.twig" with { aside: true} %}
+      {% block aside %}
+        {% include "./components/aside/aside.twig" %}
+      {% endblock %}
+      {% block content %}
+        {% include "./components/contentBlocks/contentBlocks.twig" with {contentBlocks: entry.contentBlocks} %}
+      {% endblock %}
+    {% endembed %}
+  </article>
+{% endblock %}

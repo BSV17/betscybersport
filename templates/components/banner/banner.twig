@@ -1,20 +1,18 @@
-{% set title = 'Посмотри стрим' %}
-{% set description = 'Этот человек играет в итересную игру, а вы можете посмотреть видео и тоже потом поиграть' %}
-{% set videoUrl = 'https://www.youtube.com/embed/G1IbRujko-A' %}
-
 <div class="banner">
   <div class="container">
     <div class="banner__container">
       <div class="banner__body">
         <h2 class="banner__title">
-          {{ title }}
+          {{ block.bannerTitle }}
         </h2>
-        <p class="banner__description">
-          {{ description }}
-        </p>
+        {% if block.bannerBody|length %}
+          <p class="banner__description">
+            {{ block.bannerBody }}
+          </p>
+        {% endif %}
       </div>
       <div class="banner__video">
-        <iframe src="{{ videoUrl }}" frameborder="0"></iframe>
+        <iframe src="{{ block.videoLink }}"></iframe>
       </div>
     </div>
   </div>
