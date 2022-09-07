@@ -14,10 +14,12 @@ for (let i = 0; i < contentHeadings.length; i++) {
     asideNavigationList.appendChild(listItem);
 }
 
+const navigationItems = document.querySelectorAll('.aside-navigation__item');
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            document.querySelectorAll('.aside-navigation__item').forEach((link) => {
+            navigationItems.forEach((link) => {
                 const navigationLink = link.querySelector('a');
                 link.classList.toggle(
                     'aside-navigation__item_active',
