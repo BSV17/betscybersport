@@ -4,24 +4,19 @@
   </div>
   <ul>
     <li>
-      <a href="#">
-        <svg><use href="#vk" width="30px" height="30px"/></svg>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ entryUrl }}" target="_blank">
+        {{ svg("@webroot/assets/icons/facebook.svg") }}
       </a>
     </li>
     <li>
-      <a href="#">
-        <svg><use href="#facebook" width="30px" height="30px"/></svg>
+      <a href="https://t.me/share/url?url={{ entryUrl }}" target="_blank">
+        {{ svg("@webroot/assets/icons/telegram.svg") }}
       </a>
     </li>
     <li>
-      <a href="#">
-        <svg><use href="#telegram" width="30px" height="30px"/></svg>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <svg><use href="#viber" width="30px" height="30px"/></svg>
-      </a>
+       <a href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url={{ entryUrl }}" target="_blank">
+         {{ svg("@webroot/assets/icons/viber.svg") }}
+       </a>
     </li>
   </ul>
 </div>
