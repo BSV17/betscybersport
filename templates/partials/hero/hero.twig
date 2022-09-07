@@ -9,7 +9,8 @@
           {{ entry.hero.heroDescription }}
         </p>
       </div>
-      <div class="hero__image" style="background-image: url('{{ entry.hero.backgroundImage.one().getUrl() }}')">
+      <div class="hero__image">
+        <img src="{{ entry.hero.backgroundImage.one().getUrl() }}" alt="">
       </div>
     </div>
   </div>
