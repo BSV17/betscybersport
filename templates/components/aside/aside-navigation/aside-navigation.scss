@@ -20,5 +20,11 @@
         color: $color-blue;
       }
     }
+
+    &_active {
+      & > a {
+        color: $color-blue;
+      }
+    }
   }
 }

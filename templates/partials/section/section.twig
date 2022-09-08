@@ -1,20 +1,23 @@
-<section class="section {% if background is defined and background == 'dark' %}section_dark{% endif %} {% if aside is defined %}section_aside{% endif %}">
+<section
+    class="section {% if background is defined and background == 'dark' %}section_dark{% endif %} {% if aside is defined %}section_aside{% endif %}">
   <div class="container">
     <div class="section__container">
       {% if title is defined %}
-       <div class="section__title-wrapper">
-         <h2 class="section__title">{{ title }}</h2>
-         {% if titleLink is defined %}
-           <a href="#" class="section__title-link">
-             {{ svg('@webroot/assets/icons/arrow.svg') }}
-           </a>
-         {% endif %}
-       </div>
+        <div class="section__title-wrapper">
+          <h2 class="section__title">{{ title }}</h2>
+          {% if titleLink is defined %}
+            <a href="#" class="section__title-link">
+              {{ svg('@webroot/assets/icons/arrow.svg') }}
+            </a>
+          {% endif %}
+        </div>
       {% endif %}
       <div class="section__body">
-        <div class="section__aside">
-          {% block aside %}{% endblock %}
-        </div>
+        {% if aside is defined %}
+          <div class="section__aside">
+            {% block aside %}{% endblock %}
+          </div>
+        {% endif %}
         <div class="section__content">
           {% block content %}{% endblock %}
         </div>

@@ -1,4 +1,7 @@
 .aside {
+  position: sticky;
+  top: 7rem;
+
   &__item {
     height: fit-content;
     padding: 2.5rem;

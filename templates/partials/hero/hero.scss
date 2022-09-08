@@ -48,8 +48,6 @@
   }
 
   &__image {
-    background-repeat: no-repeat;
-    background-position: 50%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -58,6 +56,11 @@
 
     @include media-breakpoint-up(sm) {
       width: 79%;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 
