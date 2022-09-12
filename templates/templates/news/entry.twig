@@ -5,7 +5,7 @@
     {% include "./partials/section/section.twig" with {title: entry.title, background: 'dark'} %}
     {% embed "./partials/section/section.twig" with { aside: true} %}
       {% block aside %}
-        {% include "./components/aside/aside.twig" %}
+        {% include "./components/aside/aside.twig" with {entryUrl: entry.url} %}
       {% endblock %}
       {% block content %}
         {% include "./components/contentBlocks/contentBlocks.twig" with {contentBlocks: entry.contentBlocks} %}
