@@ -1,4 +1,4 @@
-dateModified: 1662118907
+dateModified: 1662923712
 email:
   fromEmail: seregars17@gmail.com
   fromName: test_craft
@@ -9,11 +9,13 @@ meta:
     0cbf3dde-519b-4406-ad2c-40b4aaddf3b7: 'Entry link' # Entry link
     1c8100fa-72d2-459c-be52-0f7311264d58: Body # Body
     1cea1829-26fd-4c78-8acc-7867b759922f: 'Video link' # Video link
+    1e84a607-6e99-438c-9e37-4badea77bbd7: Partners # Partners
     3a63a2f3-14bb-4bad-9242-0f9575ccdac0: 'Referral link' # Referral link
     3b71240a-a80c-4791-9cc7-73372cd2755c: 'Footer links' # Footer links
     5f89d24d-d064-4829-a666-943b13de6161: 'News articles' # News articles
     7b19de37-5d1f-4185-804a-c6f5070b5356: __blank__ # __blank__
     7e98d1b7-a3a6-4b40-900c-30c91ad52318: 'Content blocks' # Content blocks
+    8b48d4ae-04e6-467a-a8e8-bfbd19d5f684: Partners # Partners
     8c6834ff-c270-46b8-b1dc-915513b34013: 'Bets list' # Bets list
     8e6dc501-8c08-47d9-b875-e3e3048fdff5: URL # URL
     9aca1901-83d9-4641-a5a8-7d0a9269cd81: Hero # Hero
@@ -48,10 +50,97 @@ meta:
     a64b5eb0-4982-435e-8cb7-003cd6156a7d: Image # Image
     be674ddd-a4f4-4e60-ac97-ceb8d850f53f: Socials # Socials
     c4ecfeb5-b217-4b6a-9a7a-f3c69ab06197: Bets # Bets
+    ce58208f-1800-4109-b849-794e98ca2489: Form # Form
     d5960fed-19a3-433c-9602-c34cf6e06ec1: 'Bets link' # Bets link
     e7ea8641-7bba-4dc7-9827-283f3b07b2b1: Title # Title
     f70dabb6-7523-469a-9385-c6b735c541dd: Default # Default
 plugins:
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: GQAL7G59WE6U9D2JYAK734T5
+    schemaVersion: 3.6.4
+    settings:
+      ajaxByDefault: true
+      alertNotificationRecipients: ''
+      autoScroll: true
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
+      clientDigestFrequency: 1
+      clientDigestRecipients: ''
+      customErrorMessage: null
+      customHoneypotName: null
+      defaultTemplates: true
+      defaultView: dashboard
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: ''
+      displayFeed: true
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      exportHandlesAsNames: false
+      exportLabels: false
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: null
+      formattingTemplate: flexbox.html
+      freeformHoneypot: true
+      freeformHoneypotEnhancement: false
+      hideBannerDemo: false
+      hideBannerOldFreeform: false
+      minimumSubmitTime: null
+      pluginName: ''
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: false
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
+      recaptchaKey: null
+      recaptchaLazyLoad: false
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      recaptchaSize: normal
+      recaptchaTheme: light
+      recaptchaType: v2_checkbox
+      rememberPageSubmitOrder: true
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: footer
+      scriptInsertType: pointers
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      showTutorial: true
+      spamFolderEnabled: true
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      successTemplateDirectory: null
+      twigInHtml: true
+      twigInHtmlIsolatedMode: true
+      updateSearchIndexes: true
   redactor:
     edition: standard
     enabled: true

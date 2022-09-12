@@ -1,0 +1,9 @@
+{% extends "./layouts/base.twig" %}
+
+{% block content %}
+  {% embed "./partials/section/section.twig" %}
+    {% block content %}
+      {% include "./components/form/form.twig" %}
+    {% endblock %}
+  {% endembed %}
+{% endblock %}

@@ -1,0 +1,10 @@
+columnSuffix: zapufbta
+contentColumnType: integer
+fieldGroup: 39d0cb62-72fb-4108-8557-4baf70657635 # Common
+handle: form
+instructions: ''
+name: Form
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: Solspace\Freeform\FieldTypes\FormFieldType
