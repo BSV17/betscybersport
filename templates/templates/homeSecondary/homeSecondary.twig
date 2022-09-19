@@ -1,0 +1,10 @@
+{% extends "./layouts/base.twig" %}
+
+{% block content %}
+  {% include "partials/hero/hero.twig" %}
+  {% embed "./partials/section/section.twig" with {title: "audi rs3 8v"} %}
+    {% block content %}
+      {% include "./components/contentBlocks/contentBlocks.twig" with {contentBlocks: entry.contentBlocks} %}
+    {% endblock %}
+  {% endembed %}
+{% endblock %}

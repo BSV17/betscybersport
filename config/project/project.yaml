@@ -1,4 +1,4 @@
-dateModified: 1662923712
+dateModified: 1663571433
 email:
   fromEmail: seregars17@gmail.com
   fromName: test_craft
@@ -37,17 +37,21 @@ meta:
     0378e9ff-f828-4059-96a3-1ed548a26f1d: Images # Images
     389ec0bc-e750-4cca-b4cc-c3896f811c3e: 'Main navigation' # Main navigation
     532e1def-e63e-48a3-960d-72896d7e0d3e: 'Hero images' # Hero images
+    599be6d8-738a-4738-9144-0d4ce5cd7134: 'Home secondary' # Home secondary
     736b3c6e-9604-481c-8e73-df06fc46ca78: test_craft # test_craft
     917fb507-17c6-428b-bb37-8f248596b1c2: 'Rich text' # Rich text
     947fa6fc-1184-4c14-8baf-64c9c519270c: 'Referral link title' # Referral link title
+    58878c8b-8c88-43c1-9841-a9e868e58566: SEO # SEO
     752392a2-d375-4c05-a7ad-32c1e099207e: 'Linked entry' # Linked entry
-    801157a5-ffa6-401b-b223-29f8bc9bf848: betscybersport.local # betscybersport.local
+    801157a5-ffa6-401b-b223-29f8bc9bf848: Betscybersport # Betscybersport
     9888806a-0fd5-47a9-9d36-fa428742f405: Home # Home
     44409646-b19b-43ab-9d2b-e80c1bf6bb76: News # News
     a0aa4c88-d77f-44c7-b3f6-17589266cdf0: Home # Home
     a0b723ba-1262-45bb-b901-b02ca8d48f58: Bets # Bets
+    a1e57e56-c2db-4090-a3f1-2a7247c6702c: 'Home secondary' # Home secondary
     a6c468ec-424b-464d-801b-a4b603b6053b: Banner # Banner
     a64b5eb0-4982-435e-8cb7-003cd6156a7d: Image # Image
+    add05de3-a8e4-450d-8642-5876ae5eb807: 'Betscybersport secondary' # Betscybersport secondary
     be674ddd-a4f4-4e60-ac97-ceb8d850f53f: Socials # Socials
     c4ecfeb5-b217-4b6a-9a7a-f3c69ab06197: Bets # Bets
     ce58208f-1800-4109-b849-794e98ca2489: Form # Form
@@ -55,6 +59,10 @@ meta:
     e7ea8641-7bba-4dc7-9827-283f3b07b2b1: Title # Title
     f70dabb6-7523-469a-9385-c6b735c541dd: Default # Default
 plugins:
+  embeddedassets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   freeform:
     edition: lite
     enabled: true
@@ -145,6 +153,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: XPG17MKQ0U4QV8UPAHEOXSX9
+    schemaVersion: 3.0.11
   super-table:
     edition: standard
     enabled: true

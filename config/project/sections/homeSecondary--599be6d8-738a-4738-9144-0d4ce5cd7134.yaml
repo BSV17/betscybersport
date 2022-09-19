@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: homeSecondary
+name: 'Home secondary'
+propagationMethod: all
+siteSettings:
+  add05de3-a8e4-450d-8642-5876ae5eb807: # Betscybersport secondary
+    enabledByDefault: true
+    hasUrls: true
+    template: templates/homeSecondary/homeSecondary.twig
+    uriFormat: __home__
+type: single

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11e5807d3f4f837b8d919dd650965914",
+    "content-hash": "c99980d18731a6ef48a7e2d5ebe5e95b",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -393,11 +393,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.53.1",
+            "version": "3.7.54",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/e38ee6014119c7eadf886f303a736e1b79ac7d81",
-                "reference": "e38ee6014119c7eadf886f303a736e1b79ac7d81",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/91c1f51b14b11776587db0635f643c120fb1e844",
+                "reference": "91c1f51b14b11776587db0635f643c120fb1e844",
                 "shasum": ""
             },
             "require": {
@@ -480,7 +480,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2022-08-26T15:02:29+00:00"
+            "time": "2022-09-13T18:31:19+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -708,6 +708,48 @@
             "time": "2015-01-27T10:53:51+00:00"
         },
         {
+            "name": "davechild/textstatistics",
+            "version": "1.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DaveChild/Text-Statistics/zipball/dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382",
+                "reference": "dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-bcmath": "More accurate floating point calculations.",
+                "ext-mbstring": "Handle multi-byte text properly."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "DaveChild\\TextStatistics": "src"
+                }
+            },
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Child",
+                    "email": "dave@addedbytes.com",
+                    "homepage": "https://www.addedbytes.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP package to measure the readability of text according to various algorithms.",
+            "homepage": "https://github.com/DaveChild/Text-Statistics",
+            "time": "2018-06-19T09:25:42+00:00"
+        },
+        {
             "name": "defuse/php-encryption",
             "version": "v2.3.1",
             "dist": {
@@ -880,6 +922,50 @@
                 "php-emoji"
             ],
             "time": "2020-11-27T05:08:33+00:00"
+        },
+        {
+            "name": "embed/embed",
+            "version": "v3.4.18",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/fe379f61d3ecca7a0824c4bb3839ebe0a1819520",
+                "reference": "fe379f61d3ecca7a0824c4bb3839ebe0a1819520",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0",
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "php": "^5.6|^7.0|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Embed\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Otero",
+                    "email": "oom@oscarotero.com",
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library to retrieve page info using oembed, opengraph, etc",
+            "homepage": "https://github.com/oscarotero/Embed",
+            "keywords": [
+                "embed",
+                "embedly",
+                "oembed",
+                "opengraph",
+                "twitter cards"
+            ],
+            "time": "2022-07-15T09:34:07+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -2012,6 +2098,152 @@
             "time": "2022-09-02T07:48:13+00:00"
         },
         {
+            "name": "nystudio107/craft-plugin-manifest",
+            "version": "1.0.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/d94d147b548384c7d9bd59777e12462d32042445",
+                "reference": "d94d147b548384c7d9bd59777e12462d32042445",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\pluginmanifest\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Plugin Manifest is the conduit between Craft CMS plugins and webpack, with manifest.json & webpack-dev-server HMR support",
+            "keywords": [
+                "craftcms",
+                "manifest",
+                "plugin"
+            ],
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
+                "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues"
+            },
+            "time": "2022-04-26T14:57:11+00:00"
+        },
+        {
+            "name": "nystudio107/craft-seomatic",
+            "version": "3.4.37",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7222ea76230fcf1cf74ab6c9980d49aac594a02a",
+                "reference": "7222ea76230fcf1cf74ab6c9980d49aac594a02a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.19",
+                "davechild/textstatistics": "1.0.2",
+                "nystudio107/craft-plugin-manifest": "^1.0.4",
+                "nystudio107/craft-twigfield": "^1.0.10",
+                "php-science/textrank": "^1.0.3",
+                "sunra/php-simple-html-dom-parser": "^1.5.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SEOmatic",
+                "handle": "seomatic",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/v3/CHANGELOG.md",
+                "class": "nystudio107\\seomatic\\Seomatic"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\seomatic\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "SEOmatic facilitates modern SEO best practices & implementation for Craft CMS 3. It is a turnkey SEO system that is comprehensive, powerful, and flexible.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "facebook",
+                "json-ld",
+                "meta",
+                "seo",
+                "seomatic",
+                "sitemap",
+                "tags",
+                "twitter"
+            ],
+            "support": {
+                "docs": "https://nystudio107.com/plugins/seomatic/documentation",
+                "issues": "https://nystudio107.com/plugins/seomatic/support"
+            },
+            "time": "2022-07-23T21:01:02+00:00"
+        },
+        {
+            "name": "nystudio107/craft-twigfield",
+            "version": "1.0.11",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigfield/zipball/1b920b9fa491256755975c9dd8e3a9a160546494",
+                "reference": "1b920b9fa491256755975c9dd8e3a9a160546494",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0 || ^4.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "nystudio107\\twigfield\\Twigfield"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\twigfield\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Provides a twig editor field with Twig & Craft API autocomplete",
+            "keywords": [
+                "auto",
+                "autocomplete",
+                "cms",
+                "complete",
+                "craft",
+                "craftcms",
+                "editor",
+                "twig"
+            ],
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-twigfield/blob/v1/README.md",
+                "issues": "https://github.com/nystudio107/craft-twigfield/issues",
+                "source": "https://github.com/nystudio107/craft-twigfield"
+            },
+            "time": "2022-07-24T18:06:56+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v9.99.100",
             "dist": {
@@ -2045,6 +2277,50 @@
                 "random"
             ],
             "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "php-science/textrank",
+            "version": "1.2.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-Science/TextRank/zipball/c5ccfc998b3cee91bf5d01b9f107d382acfa0ca8",
+                "reference": "c5ccfc998b3cee91bf5d01b9f107d382acfa0ca8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpScience\\TextRank\\": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Belicza",
+                    "email": "87.bdavid@gmail.com"
+                }
+            ],
+            "description": "TextRank (automatic text summarization) for PHP7 and HHVM.",
+            "keywords": [
+                "PHP7",
+                "automatic",
+                "php8",
+                "science",
+                "strict",
+                "summarization",
+                "textrank"
+            ],
+            "time": "2022-08-12T13:02:17+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2831,11 +3107,11 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "3.13.18",
+            "version": "3.13.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/82317919d7a3c311736aa2b46bd3faa7b00b8bda",
-                "reference": "82317919d7a3c311736aa2b46bd3faa7b00b8bda",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/92123239664dd4e73fb33651041f0034b793787e",
+                "reference": "92123239664dd4e73fb33651041f0034b793787e",
                 "shasum": ""
             },
             "require": {
@@ -2892,7 +3168,7 @@
                 }
             ],
             "description": "Reliable form builder that's ready for wherever your project takes you.",
-            "time": "2022-08-23T16:25:14+00:00"
+            "time": "2022-09-12T14:26:55+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -2917,6 +3193,62 @@
             ],
             "description": "Solspace Commons Library for Craft CMS 3 plugins",
             "time": "2020-08-06T14:40:45+00:00"
+        },
+        {
+            "name": "spicyweb/craft-embedded-assets",
+            "version": "2.11.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spicywebau/craft-embedded-assets/zipball/a60fe6addb2a575ead5000746ad36ba9fe83271a",
+                "reference": "a60fe6addb2a575ead5000746ad36ba9fe83271a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.6.0",
+                "embed/embed": "^3.4.17"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "embeddedassets",
+                "name": "Embedded Assets",
+                "schemaVersion": "1.0.0",
+                "class": "spicyweb\\embeddedassets\\Plugin",
+                "changelogUrl": "https://github.com/spicywebau/craft-embedded-assets/blob/master/CHANGELOG.md",
+                "downloadUrl": "https://github.com/spicywebau/craft-embedded-assets/archive/master.zip"
+            },
+            "autoload": {
+                "psr-4": {
+                    "spicyweb\\embeddedassets\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Spicy Web",
+                    "homepage": "https://spicyweb.com.au"
+                }
+            ],
+            "description": "Manage YouTube videos, Instagram photos, Twitter posts and more as first class assets",
+            "keywords": [
+                "assets",
+                "cms",
+                "craftcms",
+                "embed",
+                "instagram",
+                "plugin",
+                "twitter",
+                "vimeo",
+                "youtube"
+            ],
+            "support": {
+                "issues": "https://github.com/spicywebau/craft-embedded-assets/issues",
+                "source": "https://github.com/spicywebau/craft-embedded-assets",
+                "docs": "https://github.com/spicywebau/craft-embedded-assets/blob/2.11.3/README.md",
+                "rss": "https://github.com/spicywebau/craft-embedded-assets/commits/master.atom"
+            },
+            "time": "2022-06-29T23:17:31+00:00"
         },
         {
             "name": "stripe/stripe-php",
@@ -2961,6 +3293,48 @@
                 "stripe"
             ],
             "time": "2022-05-05T17:18:02+00:00"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "v1.5.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                },
+                {
+                    "name": "S.C. Chen",
+                    "homepage": "http://sourceforge.net/projects/simplehtmldom/"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2016-11-22T22:57:47+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4297,11 +4671,11 @@
         },
         {
             "name": "verbb/super-table",
-            "version": "2.7.2",
+            "version": "2.7.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/41d420675bcc04e8db08eacc69b10c5bbff6cf54",
-                "reference": "41d420675bcc04e8db08eacc69b10c5bbff6cf54",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/85e279220c17b007418b37c407ed556d583df830",
+                "reference": "85e279220c17b007418b37c407ed556d583df830",
                 "shasum": ""
             },
             "require": {
@@ -4346,7 +4720,7 @@
                 "docs": "https://github.com/verbb/super-table",
                 "rss": "https://github.com/verbb/super-table/commits/v2.atom"
             },
-            "time": "2022-05-15T00:47:23+00:00"
+            "time": "2022-09-13T22:47:18+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

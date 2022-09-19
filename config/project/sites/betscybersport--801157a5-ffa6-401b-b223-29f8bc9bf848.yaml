@@ -1,9 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
 enabled: true
-handle: default
+handle: betscybersport
 hasUrls: true
 language: en-US
-name: betscybersport.local
+name: Betscybersport
 primary: true
 siteGroup: 736b3c6e-9604-481c-8e73-df06fc46ca78 # test_craft
 sortOrder: 1

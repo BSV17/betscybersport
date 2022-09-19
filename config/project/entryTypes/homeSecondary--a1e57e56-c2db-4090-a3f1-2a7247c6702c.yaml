@@ -1,5 +1,5 @@
 fieldLayouts:
-  9efd3738-c232-41d5-9cf6-64bb981ca2f1:
+  27e29a8c-9dd0-4f7f-9461-4a76e0a80346:
     tabs:
       -
         elements:
@@ -36,15 +36,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8c6834ff-c270-46b8-b1dc-915513b34013 # Bets list
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
             fieldUid: 7e98d1b7-a3a6-4b40-900c-30c91ad52318 # Content blocks
             instructions: null
             label: null
@@ -62,34 +53,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-          -
-            fieldUid: 20c2dd83-73a2-41cc-89ae-597b0d685460 # Game selector
-            instructions: ''
-            label: 'News game selector'
-            required: ''
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
-      -
-        elements:
-          -
-            fieldUid: 58878c8b-8c88-43c1-9841-a9e868e58566 # SEO
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: SEO
-        sortOrder: 2
-handle: home
+handle: homeSecondary
 hasTitleField: false
-name: Home
-section: a0aa4c88-d77f-44c7-b3f6-17589266cdf0 # Home
+name: 'Home secondary'
+section: 599be6d8-738a-4738-9144-0d4ce5cd7134 # Home secondary
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

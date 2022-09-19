@@ -1,0 +1,9 @@
+baseUrl: $SECONDARY_SITE_URL
+enabled: true
+handle: betscybersportSecondary
+hasUrls: true
+language: en-US
+name: 'Betscybersport secondary'
+primary: false
+siteGroup: 736b3c6e-9604-481c-8e73-df06fc46ca78 # test_craft
+sortOrder: 2
